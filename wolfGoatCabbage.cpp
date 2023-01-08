@@ -90,6 +90,7 @@ string neighbor_label(int s, int t)
     if (bit(s,i) != bit(t,i) && bit(s,i)!=bit(s,me)) return "";
   }
   if (cross_with > 1) return ""; 
+  else if(cross_with == 0) return "Cross alone";
   else return "Cross with " + which_cross;
 }
 /*
